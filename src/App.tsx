@@ -6,6 +6,20 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="Nav-bar">
+          <p>
+            Hiya, I am Bilal.
+          </p>
+          <p>
+            I made this portfolio.
+          </p>
+          <p>
+            I used React, Typescript, JavaScript, ESLint and more.
+          </p>
+          <p>
+            You can see the code here:
+            {' '}
+            <a href="https://github.com/Bilalm354/react-portfolio">Code</a>
+          </p>
           <a href="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/edit?usp=sharing">
             CV
           </a>

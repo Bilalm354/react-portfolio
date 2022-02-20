@@ -2,10 +2,12 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'airbnb-typescript',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -14,6 +16,7 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   plugins: [
     'react',
@@ -22,4 +25,5 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
   },
+  ignorePatterns: ['.eslintrc.js']
 };
