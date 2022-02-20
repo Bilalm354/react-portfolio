@@ -5,6 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className="text-5xl font-bold underline">
+          Bilal Minhas
+        </h1>
+        <br />
         <div className="Nav-bar">
           <p>
             Hiya, I am Bilal.
@@ -13,7 +17,7 @@ function App() {
             I made this portfolio.
           </p>
           <p>
-            I used React, Typescript, JavaScript, ESLint, Husky and more.
+            I used React, Typescript, JavaScript, Tailwind, ESLint, Husky and more.
           </p>
           <p>
             You can see the code here:
