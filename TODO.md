@@ -1,2 +1,2 @@
-[ ] add tailwind 
+[x] add tailwind 
 [ ] 
