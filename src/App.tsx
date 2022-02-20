@@ -1,45 +1,25 @@
 import React from 'react';
 import './App.css';
+import Info from './components/Info';
+import NavBar from './components/NavBar';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-5xl font-bold underline">
+    <div className="App text-center">
+      <header className="App-header flex flex-col bg-gray-800 min-h-screen items-center justify-center text-white text-3xl">
+        <h1 className="text-6xl font-bold underline">
           Bilal Minhas
         </h1>
         <br />
-        <div className="Nav-bar">
-          <p>
-            Hiya, I am Bilal.
-          </p>
-          <p>
-            I made this portfolio.
-          </p>
-          <p>
-            I used React, Typescript, JavaScript, Tailwind, ESLint, Husky and more.
-          </p>
-          <p>
-            You can see the code here:
-            {' '}
-            <a href="https://github.com/Bilalm354/react-portfolio">Code</a>
-          </p>
-          <a href="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/edit?usp=sharing">
-            CV
-          </a>
-          <a href="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/export?format=pdf">
-            CV (PDF)
-          </a>
-          <a href="http://www.google.com">
-            Portfolio
-          </a>
-          <a href="http://www.google.com">
-            Contact
-          </a>
-        </div>
+        <Info />
+        <br />
+        <p>
+          You can see the code here:
+          {' '}
+          <a href="https://github.com/Bilalm354/react-portfolio">Code</a>
+        </p>
+        <NavBar />
       </header>
     </div>
   );
 }
-
-export default App;
