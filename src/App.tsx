@@ -13,7 +13,7 @@ function App() {
             I made this portfolio.
           </p>
           <p>
-            I used React, Typescript, JavaScript, ESLint and more.
+            I used React, Typescript, JavaScript, ESLint, Husky and more.
           </p>
           <p>
             You can see the code here:
