@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Info from './components/Info';
 import NavBar from './components/NavBar';
+import PortfolioGrid from './components/PortfolioGrid';
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <a href="https://github.com/Bilalm354/react-portfolio">Code</a>
         </p>
         <NavBar />
+        <br />
+        <PortfolioGrid />
       </header>
     </div>
   );
