@@ -37,7 +37,7 @@ export default function PortfolioGrid() {
   return (
     <div className="grid grid-cols-3 gap-20">
       {portfolioItemData.map((item) => (
-        <PortfolioItem item={item} />
+        <PortfolioItem item={item} key={item.title} />
       ))}
     </div>
   );
