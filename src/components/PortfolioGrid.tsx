@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioItem from './PortfolioItem';
-import { PortfolioItemData } from './PortfolioItemData';
+import { PortfolioItemData } from '../data/PortfolioItemData';
 
 const portfolioItemData: PortfolioItemData[] = [{
   title: 'title',

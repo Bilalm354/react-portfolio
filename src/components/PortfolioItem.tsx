@@ -1,5 +1,5 @@
 import React from 'react';
-import { PortfolioItemData } from './PortfolioItemData';
+import { PortfolioItemData } from '../data/PortfolioItemData';
 
 interface PortfolioItemProps {
   item: PortfolioItemData
