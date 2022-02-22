@@ -35,7 +35,7 @@ const portfolioItemData: PortfolioItemData[] = [{
 
 export default function PortfolioGrid() {
   return (
-    <div className="grid grid-cols-3 gap-20">
+    <div className="grid grid-cols-3 gap-12">
       {portfolioItemData.map((item) => (
         <PortfolioItem item={item} key={item.title} />
       ))}
