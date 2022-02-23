@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const onSubmit = () => {
+    // alert(`name: ${name}`);
+    // alert(`email: ${email}`);
+  };
+
   return (
-    <div>
-      <input placeholder="Name" />
-      <br />
-      <br />
-      <input placeholder="Email" />
-      <br />
-      <br />
+    <div className="flex flex-col gap-4">
+      <input
+        type="text"
+        placeholder="Name"
+        value={name}
+        onChange={(event: any) => setName(event.target.value)}
+        className="text-black"
+      />
+      <input
+        type="text"
+        placeholder="Email"
+        value={email}
+        onChange={(event: any) => setEmail(event.target.value)}
+        className="text-black"
+      />
       <textarea placeholder="Message" />
-      <br />
-      <br />
-      <button type="submit" className="border-2 p-2">Submit</button>
+      <button type="submit" className="border-2 p-2" onClick={onSubmit}>Submit</button>
     </div>
   );
 }
