@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
 import Info from './components/Info';
 import MyName from './components/nav/MyName';
 import NavBar from './components/nav/NavBar';
@@ -24,10 +25,11 @@ export default function App() {
       <PortfolioGrid />
       <br />
       <br />
+      <ContactForm />
+      <br />
+      <br />
+      <br />
       <Contact />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
