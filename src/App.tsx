@@ -15,13 +15,6 @@ export default function App() {
       <Info />
       <br />
       <br />
-      <p>
-        You can see the code here:
-        {' '}
-        <a href="https://github.com/Bilalm354/react-portfolio">Code</a>
-      </p>
-      <br />
-      <br />
       <PortfolioGrid />
       <br />
       <br />

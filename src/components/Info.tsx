@@ -12,6 +12,15 @@ export default function Info() {
       <p>
         I used React, Typescript, JavaScript, Tailwind, ESLint, Husky and more.
       </p>
+      <p>
+        You can see the code here:
+        {' '}
+        <a href="https://github.com/Bilalm354/react-portfolio">
+          <button type="button">
+            Code
+          </button>
+        </a>
+      </p>
     </div>
   );
 }

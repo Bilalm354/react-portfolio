@@ -9,7 +9,7 @@ export default function PortfolioItem({ item }: PortfolioItemProps) {
   const { title, description, imagePath } = item;
 
   return (
-    <div>
+    <div className="border-2 p-8 rounded-2xl">
       title:
       {title}
       <br />
