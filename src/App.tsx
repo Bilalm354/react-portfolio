@@ -5,6 +5,12 @@ import MyName from './components/nav/MyName';
 import NavBar from './components/nav/NavBar';
 import PortfolioGrid from './components/PortfolioGrid';
 
+// TODO: hamburger menu for mobile
+// TODO: make every button on nav bar functional or delete it
+// TODO: add my github profile
+// TODO: styling on mobile to prevent nav bar and my name from overlapping
+// TODO: add portfolio items
+
 export default function App() {
   return (
     <div className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl">
@@ -19,6 +25,9 @@ export default function App() {
       <br />
       <br />
       <Contact />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

@@ -6,18 +6,15 @@ interface PortfolioItemProps {
 }
 
 export default function PortfolioItem({ item }: PortfolioItemProps) {
-  const { title, description, imagePath } = item;
+  const {
+    title, description, url,
+  } = item;
 
   return (
-    <div className="border-2 p-8 rounded-2xl">
-      title:
+    <a href={url} className="border-2 p-8 rounded-2xl bg-red-800 hover:bg-red-900 w-60">
       {title}
       <br />
-      description:
       {description}
-      <br />
-      imagePath:
-      {imagePath}
-    </div>
+    </a>
   );
 }

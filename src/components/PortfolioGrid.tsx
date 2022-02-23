@@ -2,40 +2,17 @@ import React from 'react';
 import PortfolioItem from './PortfolioItem';
 import { PortfolioItemData } from '../data/PortfolioItemData';
 
-const portfolioItemData: PortfolioItemData[] = [{
-  title: 'title',
-  description: 'description',
-  imagePath: 'imagePath',
-},
-{
-  title: 'title2',
-  description: 'description2',
-  imagePath: 'imagePath2',
-},
-{
-  title: 'title3',
-  description: 'description3',
-  imagePath: 'imagePath3',
-},
-{
-  title: 'title4',
-  description: 'description4',
-  imagePath: 'imagePath4',
-},
-{
-  title: 'title5',
-  description: 'description5',
-  imagePath: 'imagePath5',
-},
-{
-  title: 'title6',
-  description: 'description6',
-  imagePath: 'imagePath6',
-}];
+const portfolioItemData: PortfolioItemData[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  .map((num) => ({
+    title: `title${num}`,
+    description: `description${num}`,
+    imagePath: `imagePath${num}`,
+    url: '#',
+  }));
 
 export default function PortfolioGrid() {
   return (
-    <div className="grid grid-cols-3 gap-12">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
       {portfolioItemData.map((item) => (
         <PortfolioItem item={item} key={item.title} />
       ))}
