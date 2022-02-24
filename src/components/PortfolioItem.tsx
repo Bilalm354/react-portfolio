@@ -11,7 +11,7 @@ export default function PortfolioItem({ item }: PortfolioItemProps) {
   } = item;
 
   return (
-    <a href={url} className="border-2 p-8 rounded-2xl bg-blue-700 hover:bg-blue-900 w-60">
+    <a href={url} className="border-2 p-8 rounded-2xl bg-blue-700 hover:bg-blue-900 aspect-video">
       {title}
       <br />
       {description}

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div className="Info leading-relaxed">
+    <div className="Info leading-relaxed w-3/5">
       <p>
         Hiya, I am Bilal.
       </p>
