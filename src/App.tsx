@@ -14,21 +14,12 @@ import PortfolioGrid from './components/PortfolioGrid';
 
 export default function App() {
   return (
-    <div className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl">
+    <div className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl gap-16 py-16 mb-16">
       <MyName />
       <NavBar />
-      <br />
-      <br />
       <Info />
-      <br />
-      <br />
       <PortfolioGrid />
-      <br />
-      <br />
       <ContactForm />
-      <br />
-      <br />
-      <br />
       <Contact />
     </div>
   );

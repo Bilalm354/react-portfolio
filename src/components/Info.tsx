@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div className="Info">
+    <div className="Info leading-relaxed">
       <p>
         Hiya, I am Bilal.
       </p>
