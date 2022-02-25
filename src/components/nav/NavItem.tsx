@@ -7,7 +7,7 @@ interface NavItemProps {
 
 export default function NavItem({ text, link }: NavItemProps) {
   return (
-    <a className="px-3 hover:underline" href={link}>
+    <a className="px-3 hover:underline block" href={link}>
       {text}
     </a>
   );
