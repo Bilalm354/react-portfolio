@@ -9,8 +9,7 @@ export default function NavBar() {
       <div className="hidden flex-col md:flex md:flex-row fixed top-0 md:right-0 p-4" id="menu">
         <NavItem text="CV" link="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/edit?usp=sharing" />
         <NavItem text="CV (PDF)" link="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/export?format=pdf" />
-        <NavItem text="Interactive CV" link="#" />
-        <NavItem text="Portfolio" link="#" />
+        <NavItem text="Projects" link="#projects" />
         <NavItem text="Contact" link="#contact" />
       </div>
       <div className="fixed top-0 right-0 p-4 block md:hidden">

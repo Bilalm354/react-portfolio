@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div className="Info leading-relaxed w-3/5">
+    <div className="leading-relaxed w-3/5">
       <p>
         Hiya, I am Bilal.
       </p>
@@ -16,7 +16,7 @@ export default function Info() {
         You can see the code here:
         {' '}
         <a href="https://github.com/Bilalm354/react-portfolio">
-          <button type="button">
+          <button type="button" className="underline">
             Code
           </button>
         </a>

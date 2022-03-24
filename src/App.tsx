@@ -4,7 +4,7 @@ import ContactForm from './components/ContactForm';
 import Info from './components/Info';
 import MyName from './components/nav/MyName';
 import NavBar from './components/nav/NavBar';
-import PortfolioGrid from './components/PortfolioGrid';
+import PortfolioGrid from './components/portfolio/PortfolioGrid';
 
 // TODO: hamburger menu for mobile
 // TODO: make every button on nav bar functional or delete it
@@ -14,7 +14,7 @@ import PortfolioGrid from './components/PortfolioGrid';
 
 export default function App() {
   return (
-    <div className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl gap-16 py-16 mb-16">
+    <div className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl space-y-5 py-16 mb-16">
       <MyName />
       <NavBar />
       <Info />
