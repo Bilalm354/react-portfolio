@@ -4,10 +4,7 @@ export default function Info() {
   return (
     <div className="leading-relaxed w-3/5">
       <p>
-        Hiya, I am Bilal.
-      </p>
-      <p>
-        I made this portfolio.
+        Hiya, I am Bilal. I made this portfolio.
       </p>
       <p>
         I used React, Typescript, JavaScript, Tailwind, ESLint, Husky and more.

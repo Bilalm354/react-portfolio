@@ -1,0 +1,11 @@
+Model Information:
+* title:	Basic Bedroom (Voxel)
+* source:	https://sketchfab.com/3d-models/basic-bedroom-voxel-d8d06840f128426c9f5beed1cfab4dd9
+* author:	comrademathias (https://sketchfab.com/comrademathias)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Basic Bedroom (Voxel)" (https://sketchfab.com/3d-models/basic-bedroom-voxel-d8d06840f128426c9f5beed1cfab4dd9) by comrademathias (https://sketchfab.com/comrademathias) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
