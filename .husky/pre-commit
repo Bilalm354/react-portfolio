@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx eslint . --ext .js,.jsx,.ts,.tsx
+npx eslint src --ext .js,.jsx,.ts,.tsx
 # npm test -- --watchAll=false
