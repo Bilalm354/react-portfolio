@@ -9,11 +9,6 @@ import ThreeDRenderer from './components/ThreeDdContainer';
 
 const MAIN_PAGE_WIDTH_FRACTION = 3 / 5;
 
-// TODO: hamburger menu for mobile
-// TODO: make every button on nav bar functional or delete it
-// TODO: add my github profile
-// TODO: styling on mobile to prevent nav bar and my name from overlapping
-
 export default function App() {
   const container = useRef<any>(null);
   const [canvasWidth, setCanvasWidth] = useState(0);
