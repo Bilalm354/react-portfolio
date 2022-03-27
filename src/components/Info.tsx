@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div className="leading-relaxed w-3/5">
+    <div className="text-base md:text-xl leading-relaxed w-4/5">
       <p>
         Hiya, I am Bilal. I made this portfolio.
       </p>

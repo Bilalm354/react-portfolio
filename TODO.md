@@ -1,12 +1,19 @@
-- [x] add tailwind 
-- [ ] Deploy to netlify
-- [ ] add smooth scroll for links
-- [ ] make hamburger menu work
-- [ ] add innteractive cv
+todo
+- [ ] style hamburger menu
 - [ ] make contact form work or remove it 
-- [ ] add a react native project
-- [ ] add kart racer 
 - [ ] add my github profile
-- [ ] styling on mobile to prevent nav bar and my name from overlapping
+- [ ] add kart racer 
+- [ ] add a react native project
+- [ ] add interactive cv
+- [ ] add smooth scroll for links
+- [ ] Extract styling colours
+- [ ] Remove contact form or make it work
 - [ ] Connect to www.bilalminhas.com
 - [ ] get SSL for www.bilalminhas.com
+
+done
+- [x] add tailwind 
+- [x] Deploy to netlify
+- [x] Name is not exactly in the corner. Make it so
+- [x] make hamburger menu work
+- [x] styling on mobile to prevent nav bar and my name from overlapping

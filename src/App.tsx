@@ -7,13 +7,13 @@ import NavBar from './components/nav/NavBar';
 import PortfolioGrid from './components/portfolio/PortfolioGrid';
 import ThreeDRenderer from './components/ThreeDdContainer';
 
-const MAIN_PAGE_WIDTH_FRACTION = 3 / 5;
+const CANVAS_RATIO = 0.8;
 
 export default function App() {
   const container = useRef<any>(null);
   const [canvasWidth, setCanvasWidth] = useState(0);
 
-  const calculateCanvasWidth = () => container.current.offsetWidth * MAIN_PAGE_WIDTH_FRACTION;
+  const calculateCanvasWidth = () => container.current.offsetWidth * CANVAS_RATIO;
 
   useEffect(() => {
     setCanvasWidth(calculateCanvasWidth());
@@ -30,9 +30,9 @@ export default function App() {
       className="text-center flex flex-col bg-blue-900 min-h-screen items-center justify-center text-white text-2xl space-y-5 py-16 mb-16"
       ref={container}
     >
-      <ThreeDRenderer width={canvasWidth} />
       <MyName />
       <NavBar />
+      <ThreeDRenderer width={canvasWidth} />
       <Info />
       <PortfolioGrid />
       <ContactForm />
