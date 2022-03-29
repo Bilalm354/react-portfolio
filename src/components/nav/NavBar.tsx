@@ -9,7 +9,6 @@ export default function NavBar() {
   return (
     <div>
       <div className={`${showMobileNav ? 'flex-col' : 'hidden'} md:flex md:flex-row fixed top-0 md:right-0 p-4`} id="menu">
-        <NavItem text="CV" link="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/edit?usp=sharing" openInNewTab />
         <NavItem text="CV (PDF)" link="https://docs.google.com/document/d/1FHzaHQE2R8jK0bv6rl2TZqD8Hq2swN-KYv-3TuFMG74/export?format=pdf" openInNewTab />
         <NavItem text="Projects" link="#projects" />
         <NavItem text="Contact" link="#contact" />

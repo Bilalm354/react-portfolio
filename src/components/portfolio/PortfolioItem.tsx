@@ -17,7 +17,7 @@ export default function PortfolioItem({ item }: PortfolioItemProps) {
     title, url, imageFileName, code, languagesAndFrameworks,
   } = item;
 
-  const Icons = {
+  const icons = {
     JavaScript: <SiJavascript />,
     TypeScript: <SiTypescript />,
     React: <SiReact />,
@@ -37,7 +37,11 @@ export default function PortfolioItem({ item }: PortfolioItemProps) {
           <div id="logos" className="flex justify-center gap-5 mt-1">
             {languagesAndFrameworks
             && languagesAndFrameworks
-              .map((language) => Icons[language])}
+              .map((language) => (
+                <React.Fragment key={title + language.toString()}>
+                  {icons[language]}
+                </React.Fragment>
+              ))}
           </div>
         </a>
       </div>

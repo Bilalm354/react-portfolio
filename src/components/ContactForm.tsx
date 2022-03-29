@@ -1,48 +1,32 @@
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState();
-  const [message, setMessage] = useState('');
-  const onSubmit = () => {
-    // alert(`name: ${name}`);
-    // alert(`email: ${email}`);
-    // alert(`phoneNumber: ${phoneNumber}`);
-    // alert(`message: ${message}`);
+// TODO: make this work by following the emailJS docs
+
+export default function ContactUs() {
+  const form: any = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   return (
-    <div id="contact" className="flex flex-col gap-4 w-2/3">
-      <h1>Get in touch</h1>
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(event: any) => setName(event.target.value)}
-        className="text-black p-2"
-      />
-      <input
-        type="text"
-        placeholder="Email"
-        value={email}
-        onChange={(event: any) => setEmail(event.target.value)}
-        className="text-black p-2"
-      />
-      <input
-        type="number"
-        placeholder="Number"
-        value={phoneNumber}
-        onChange={(event: any) => setPhoneNumber(event.target.value)}
-        className="text-black p-2"
-      />
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(event: any) => setMessage(event.target.value)}
-        className="text-black h-40 p-2"
-      />
-      <button type="submit" className="border-2 p-2 bg-blue-700 hover:bg-blue-900" onClick={onSubmit}>Submit</button>
-    </div>
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
+      <label>Name</label>
+      <input type="text" name="user_name" className="text-black " />
+      <label>Email</label>
+      <input type="email" name="user_email" className="text-black " />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" className="border-2 py-1 mt-2" />
+    </form>
   );
 }
