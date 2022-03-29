@@ -1,11 +1,10 @@
-enum LanguagesAndFrameworks {
-  JavaScript,
-  TypeScript,
-  React,
-  HTML,
-  CSS,
-  Canvas,
-  ThreeJS,
+export enum LanguagesAndFrameworks {
+  HTML = 'HTML',
+  CSS = 'CSS',
+  JavaScript = 'JavaScript',
+  TypeScript = 'TypeScript',
+  React = 'React',
+  ThreeJS = 'ThreeJS',
 }
 
 export interface PortfolioItemData {
@@ -14,7 +13,7 @@ export interface PortfolioItemData {
   imageFileName?: string;
   url: string;
   code?: string;
-  languagesAndFrameworks?: LanguagesAndFrameworks[]
+  languagesAndFrameworks: LanguagesAndFrameworks[]
 }
 
 export const portfolioItemData: PortfolioItemData[] = [
@@ -24,6 +23,12 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'tasklist-timer.gif',
     url: 'https://focus-tasks-bilalm354.netlify.com/',
     code: '#',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+      LanguagesAndFrameworks.React,
+    ],
   },
   {
     title: 'JavaScript Todo List',
@@ -31,6 +36,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'todolist-16-9.gif',
     url: 'https://bilalm354.github.io/Javascript-Todo-List/',
     code: 'https://github.com/Bilalm354/Javascript-Todo-List',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'React Stopwatch and Timer',
@@ -38,6 +48,12 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'stopwatch-countdown.gif',
     url: 'https://bilalm354-stopwatch-countdown.netlify.com',
     code: '#',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+      LanguagesAndFrameworks.React,
+    ],
   },
   {
     title: 'Kitchen Planner',
@@ -45,6 +61,12 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'mini-planner.gif',
     url: 'https://github.com/Bilalm354/mini-planner/tree/feb-2020',
     code: 'https://github.com/Bilalm354/mini-planner/tree/feb-2020',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+      LanguagesAndFrameworks.React,
+    ],
   },
   {
     title: 'Welford Bouquet Front Page',
@@ -52,6 +74,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'welford.png',
     url: 'https://bilalm354.github.io/Welford-Bouquet',
     code: 'https://github.com/Bilalm354/Welford-Bouquet',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'JavaScript Breakout',
@@ -59,6 +86,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'breakout.gif',
     url: 'https://bilalm354.github.io/breakout/',
     code: '#',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'Responsive Site',
@@ -66,6 +98,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'frontendtest.gif',
     url: 'https://bilalm354.github.io/frontend_test',
     code: 'https://github.com/Bilalm354/frontend_test',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'My first portfolio',
@@ -73,6 +110,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'old-portfolio.gif',
     url: 'https://bilalm354.github.io/old-portfolio/',
     code: 'https://github.com/Bilalm354/old-portfolio',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'Pong',
@@ -80,6 +122,11 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'pong.gif',
     url: 'https://bilalm354.github.io/old-portfolio/pong.html',
     code: '#',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
   {
     title: 'Rock Paper Scissors',
@@ -87,5 +134,10 @@ export const portfolioItemData: PortfolioItemData[] = [
     imageFileName: 'rockPaperScissors.gif',
     url: 'https://bilalm354.github.io/rock-paper-scissors',
     code: 'https://github.com/Bilalm354/rock-paper-scissors',
+    languagesAndFrameworks: [
+      LanguagesAndFrameworks.HTML,
+      LanguagesAndFrameworks.CSS,
+      LanguagesAndFrameworks.JavaScript,
+    ],
   },
 ];
