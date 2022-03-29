@@ -19,14 +19,17 @@ export default function ContactUs() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
-      <label>Name</label>
-      <input type="text" name="user_name" className="text-black " />
-      <label>Email</label>
-      <input type="email" name="user_email" className="text-black " />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" className="border-2 py-1 mt-2" />
-    </form>
+    <div className="mt-4">
+      <h1>Send me a message</h1>
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
+        <label>Name</label>
+        <input type="text" name="user_name" className="text-black" />
+        <label>Email</label>
+        <input type="email" name="user_email" className="text-black" />
+        <label>Message</label>
+        <textarea name="message" className="text-black" />
+        <input type="submit" value="Send" className="border-2 py-1 mt-2" />
+      </form>
+    </div>
   );
 }
