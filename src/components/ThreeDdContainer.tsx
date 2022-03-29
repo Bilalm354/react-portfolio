@@ -28,7 +28,7 @@ function addSpotlight(scene: THREE.Scene) {
   scene.add(spotLight);
 }
 
-export default function ThreeDRenderer({ width } : ThreeDRendererProps) {
+export default function ThreeDViewer({ width } : ThreeDRendererProps) {
   const mountRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

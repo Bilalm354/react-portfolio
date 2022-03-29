@@ -4,7 +4,7 @@ import PortfolioItem from './PortfolioItem';
 
 export default function PortfolioGrid() {
   return (
-    <div className="w-4/5">
+    <div>
       <h1 id="projects" className="text-4xl mb-4">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-12">
         {portfolioItemData.map((item) => (

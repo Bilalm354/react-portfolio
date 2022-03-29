@@ -8,10 +8,13 @@ export default function ContactForm() {
   const onSubmit = () => {
     // alert(`name: ${name}`);
     // alert(`email: ${email}`);
+    // alert(`phoneNumber: ${phoneNumber}`);
+    // alert(`message: ${message}`);
   };
 
   return (
-    <div id="contact" className="flex flex-col gap-4 w-1/4">
+    <div id="contact" className="flex flex-col gap-4 w-2/3">
+      <h1>Get in touch</h1>
       <input
         type="text"
         placeholder="Name"
