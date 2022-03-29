@@ -21,7 +21,7 @@ export default function ContactUs() {
 
   return (
     <div className="mt-4">
-      <h1>Send me a message</h1>
+      <h1>Get in touch</h1>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1">
         <label>Name</label>
         <input type="text" name="user_name" className="text-black" />
