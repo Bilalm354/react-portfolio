@@ -20,16 +20,16 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 w-3/5">
       <h1 className="text-4xl">Get in touch</h1>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-1 mt-4">
         <label>Name</label>
-        <input type="text" name="user_name" className="text-black" />
+        <input type="text" name="user_name" className="text-black w-full" />
         <label>Email</label>
-        <input type="email" name="user_email" className="text-black" />
+        <input type="email" name="user_email" className="text-black w-full" />
         <label>Message</label>
         <textarea name="message" className="text-black" />
-        <input type="submit" value="Send" className="border-2 py-1 mt-2 bg-blue-700 hover:bg-blue-800" />
+        <input type="submit" value="Send" className="border-2 py-1 mt-2 bg-blue-700 hover:bg-blue-800 w-full" />
       </form>
     </div>
   );
