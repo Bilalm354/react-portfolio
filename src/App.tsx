@@ -31,8 +31,10 @@ export default function App() {
         className="text-center flex flex-col w-4/5 md:w-3/5 items-center justify-center"
         ref={container}
       >
-        <MyName />
-        <NavBar />
+        <div id="header" className="bg-blue-900 fixed top-0 w-full flex p-4 justify-between z-10">
+          <MyName />
+          <NavBar />
+        </div>
         <ThreeDViewer width={canvasWidth} />
         <Info />
         <PortfolioGrid />
